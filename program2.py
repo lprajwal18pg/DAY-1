@@ -1,15 +1,17 @@
 arra = []
-n = 10
+n = 5
+
 for i in range(n):
-    element = int(input(f"Enter the element {i + 1}: "))  
+    element = input(f"Enter the element {i + 1}: ")
+    element = int(element)  
     arra.append(element)
 
+ele50 = []
 
-largest_number = arra[0]
-
-
-for num in arra:
-    if num > largest_number:
-        largest_number = num
-
-print("The largest number is:", largest_number)
+for element in arra:
+    if element > 50:
+        ele50.append(element)
+if ele50:
+    print("Elements more tham 50:", ele50)
+else:
+    print("No elements more then 50 found.")
